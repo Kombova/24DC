@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'CerebriSansPro';
+  src: local('CerebriSansPro'), url(./fonts/CerebriSansPro-Medium.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+body {
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  font-family: 'CerebriSansPro';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main_container {
+  @apply max-w-7xl mx-auto px-2
+}
+.title-max {
+  @apply  font-medium text-7xl leading-tight
+
+}
+.blue-button {
+  @apply flex space-x-2 justify-center items-center py-2 px-8 bg-light-blue  font-medium leading-5 rounded
+}
+.waves {
+  animation: wawes 10s ease-in  infinite normal forwards;
+}
+.ellips {
+  animation: ellips 5s ease-in  infinite normal forwards;
+}
+
+@keyframes ellips {
+  0% {
+    animation-timing-function: ease-in;
+    transform: translate(0rem, 0ex);
+  }
+  25% {
+    animation-timing-function: ease-in;
+    transform: translate(-2.1rem, -2ex);
+
+  }  
+  50% {
+    animation-timing-function: ease-in;
+    transform: translate(-4.1rem, 4ex);
+  }
+  75% {
+    animation-timing-function: ease-in;
+    transform: translate(-2.1rem, -2ex);
+  }
+  100% {
+    animation-timing-function: ease-in;
+    transform: translate(-2.1rem, 2ex);
+  }
+  
+  
+}
+@keyframes waves {
+  0%{
+    animation-timing-function: ease-in;
+    transform: scale(2);
+
+  }
+
+  25%{
+    animation-timing-function: ease-in;
+    width: 30vw;
+    transform: scale(1.5);
+  }
+  75%{
+    animation-timing-function: ease-in;
+    transform: scale(2);
+    width: 40vw;
+  }
+
+    100%{
+      animation-timing-function: ease-in;
+      transform: scale(1.5);
+      width: 30vw;
+     
+    }
+}
