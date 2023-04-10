@@ -19,19 +19,19 @@ const Header = () => {
           <nav>
             <ul className=" flex space-x-8">
               <li>
-                <a href="">About</a>
+                <a href="#">About</a>
               </li>
               <li>
-                <a href="">Portfolio</a>
+                <a href="#">Portfolio</a>
               </li>
               <li>
-                <a href="">Services</a>
+                <a href="#">Services</a>
               </li>
               <li>
-                <a href="">Careers</a>
+                <a href="#">Careers</a>
               </li>
               <li>
-                <a href="">Blog</a>
+                <a href="#">Blog</a>
               </li>
             </ul>
           </nav>
@@ -75,19 +75,19 @@ const Header = () => {
       <nav id="mobile-menu" className="hidden space-y-8 mt-4">
         <ul className=" flex flex-col space-y-8">
           <li>
-            <a href="">About</a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a href="">Portfolio</a>
+            <a href="#">Portfolio</a>
           </li>
           <li>
-            <a href="">Services</a>
+            <a href="#">Services</a>
           </li>
           <li>
-            <a href="">Careers</a>
+            <a href="#">Careers</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <a href="#">Blog</a>
           </li>
         </ul>
         <button className=" flex space-x-2 justify-center items-center py-2 px-8 bg-light-blue  font-medium leading-5 rounded text-white">

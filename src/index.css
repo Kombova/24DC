@@ -28,8 +28,10 @@ body {
 .blue-button {
   @apply flex space-x-2 justify-center items-center py-2 px-8 bg-light-blue  font-medium leading-5 rounded
 }
-.waves {
-  animation: wawes 10s ease-in  infinite normal forwards;
+.waves svg path {
+ 
+    animation: wave 1s infinite alternate;
+  
 }
 .ellips {
   animation: ellips 5s ease-in  infinite normal forwards;
@@ -60,28 +62,27 @@ body {
   
   
 }
-@keyframes waves {
-  0%{
-    animation-timing-function: ease-in;
-    transform: scale(2);
-
-  }
-
-  25%{
-    animation-timing-function: ease-in;
-    width: 30vw;
-    transform: scale(1.5);
-  }
-  75%{
-    animation-timing-function: ease-in;
-    transform: scale(2);
-    width: 40vw;
-  }
-
-    100%{
-      animation-timing-function: ease-in;
-      transform: scale(1.5);
-      width: 30vw;
-     
-    }
+.wave {
+  
+  overflow: hidden;
+  
+  
 }
+.wave path {
+  stroke: silver; /* цвет линии */
+  stroke-width: 1px; /* толщина линии */
+  stroke-dasharray: 20, 5; /* длина и промежуток между элементами линии */
+  animation: wave 2s linear infinite;
+  
+}
+
+
+@keyframes wave {
+  from {
+    stroke-dashoffset: 0; /* начальное значение смещения длины элемента линии */
+  }
+  to {
+    stroke-dashoffset: 25; /* конечное значение смещения длины элемента линии */
+  }
+}
+
